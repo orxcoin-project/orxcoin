@@ -23,11 +23,11 @@ enum class EConsensusError
     BAD_STATE
 };
 
-class ValidationException : public LTCException
+class ValidationException : public ORXException
 {
 public:
     ValidationException(const EConsensusError& type, const std::string& function)
-        : LTCException("ValidationException", GetMessage(type), function)
+        : ORXException("ValidationException", GetMessage(type), function)
     {
 
     }

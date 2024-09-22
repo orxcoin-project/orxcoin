@@ -6,11 +6,11 @@
 #define ThrowFile(msg) throw FileException(msg, __FUNCTION__)
 #define ThrowFile_F(msg, ...) throw FileException(StringUtil::Format(msg, __VA_ARGS__), __FUNCTION__)
 
-class FileException : public LTCException
+class FileException : public ORXException
 {
 public:
     FileException(const std::string& message, const std::string& function)
-        : LTCException("FileException", message, function)
+        : ORXException("FileException", message, function)
     {
 
     }

@@ -6,11 +6,11 @@
 #define ThrowNotFound(msg) throw NotFoundException(msg, __FUNCTION__)
 #define ThrowNotFound_F(msg, ...) throw NotFoundException(StringUtil::Format(msg, __VA_ARGS__), __FUNCTION__)
 
-class NotFoundException : public LTCException
+class NotFoundException : public ORXException
 {
 public:
     NotFoundException(const std::string& message, const std::string& function)
-        : LTCException("NotFoundException", message, function)
+        : ORXException("NotFoundException", message, function)
     {
 
     }
