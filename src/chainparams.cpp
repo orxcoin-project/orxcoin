@@ -127,8 +127,7 @@ public:
         //vSeeds.emplace_back("seed-a.orxcoin.loshan.co.uk");
         //vSeeds.emplace_back("dnsseed.thrasher.io");
         //vSeeds.emplace_back("dnsseed.orxcointools.com");
-        //vSeeds.emplace_back("dnsseed.orxcoinpool.org");
-        vSeeds.emplace_back("85.208.51.195");
+        vSeeds.emplace_back("dnsseed.orxcoin.org");
 
        // Change for OrionX (ORX)
        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,53);  
